@@ -1,0 +1,22 @@
+<div class="statistics">
+  <h3>Statistics</h3>
+  <div>
+    <div *ngFor="let statistic of statistics">
+      <div>
+        <div>{{statistic.name}}</div>
+        <div>Transactions</div>
+      </div>
+      <div>
+        <div>€{{statistic.value}}</div>
+        <div>{{statistic.transactions}}</div>
+      </div>
+      <div>
+        <div>Compared to last year</div>
+        <div>
+          <div>€{{statistic.lastYearValue}}</div>
+          <div>{{statistic.lastYearTransactions}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
