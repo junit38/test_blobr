@@ -1,0 +1,31 @@
+.nav {
+  padding: 50px 50px 20px 50px;
+}
+
+.nav .nav-header {
+  float: right;
+}
+
+.nav .nav-header .nav-header-item {
+  padding: 5px 10px;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid rgb(243, 243, 243);
+  border-right: 0;
+  color: rgb(143, 143, 143);
+}
+
+.nav .nav-header .nav-header-item:first-child {
+  border-top-left-radius: var(--cornerRadius);
+  border-bottom-left-radius: var(--cornerRadius);
+}
+
+.nav .nav-header .nav-header-item:last-child {
+  border-right: 1px solid rgb(243, 243, 243);
+  border-top-right-radius: var(--cornerRadius);
+  border-bottom-right-radius: var(--cornerRadius);
+}
+
+.nav .nav-header .nav-header-item.selected {
+  color: var(--blue);
+}

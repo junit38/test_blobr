@@ -1,6 +1,8 @@
 <div class="nav">
   <div class="nav-header">
-    <div *ngFor="let header of headers">
+    <div *ngFor="let header of headers" class="nav-header-item" [ngClass]="{
+      selected: header == selectedHeader
+    }">
       {{header}}
     </div>
   </div>

@@ -1,0 +1,49 @@
+.sidebar .sidebar-header {
+  background-color: black;
+  padding: 20px;
+}
+
+.sidebar .sidebar-header h3 {
+  margin: 0;
+  color: white;
+}
+
+.sidebar .sidebar-header h4 {
+  color: rgb(72, 188, 92);
+  margin: 0;
+  margin-top: 10px;
+}
+
+.sidebar .sidebar-header img {
+  float: right;
+  margin-top: 5px;
+}
+
+.sidebar .sidebar-content {
+  margin-bottom: -5000px;
+  padding-bottom: 5000px;
+  background-color: rgb(34, 34, 34);
+}
+
+.sidebar .sidebar-content ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.sidebar .sidebar-content li {
+  list-style: none;
+  color: rgb(158, 158, 158);
+  padding: 15px 20px;
+}
+
+.sidebar .sidebar-content li.selected {
+  background-color: var(--blue);
+}
+
+.sidebar .sidebar-content li img {
+  float: left;
+}
+
+.sidebar .sidebar-content li div {
+  padding-left: 40px;
+}

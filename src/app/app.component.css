@@ -1,0 +1,24 @@
+.app {
+  overflow: hidden;
+}
+
+.app app-sidebar {
+  width: 20%;
+  float: left;
+}
+
+.app .app-content {
+  width: 80%;
+  float: left;
+  background-color: rgb(251, 251, 251);
+}
+
+.app .app-content .app-content-header {
+  background-color: white;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.app .app-content .app-content-header h2 {
+  margin: 0;
+  padding: 20px 30px;
+}

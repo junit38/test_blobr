@@ -15,6 +15,8 @@ export class NavComponent {
     'Custom...'
   ];
 
+  selectedHeader = 'Months';
+
   year = '2020';
 
   months = [
