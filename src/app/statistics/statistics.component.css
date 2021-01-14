@@ -1,0 +1,44 @@
+.statistics {
+  padding: 40px;
+}
+
+.statistics h2 {
+  margin-top: 0;
+  display: table;
+}
+
+.statistics .statistics-statistic {
+  background-color: white;
+  border: 1px solid var(--borderColor);
+  border-radius: var(--borderRadius);
+  width: 31%;
+  display: inline-block;
+  margin-right: 3%;
+}
+
+.statistics .statistics-statistic:last-child {
+  margin-right: 0;
+}
+
+.statistics .statistics-statistic .statistics-statistic-header {
+  padding: 5px 10px;
+}
+
+.statistics .statistics-statistic .statistics-statistic-header small {
+  float: right;
+  margin-top: 3px;
+}
+
+.statistics .statistics-statistic .statistics-statistic-content {
+  border-top: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--borderColor);
+  padding: 10px;
+}
+
+.statistics .statistics-statistic .statistics-statistic-content .statistics-statistic-content-transactions {
+  float: right;
+}
+
+.statistics .statistics-statistic .statistics-statistic-footer {
+  padding: 5px 10px;
+}

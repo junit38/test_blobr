@@ -1,20 +1,20 @@
 <div class="statistics">
-  <h3>Statistics</h3>
+  <h2>Statistics</h2>
   <div>
-    <div *ngFor="let statistic of statistics">
-      <div>
-        <div>{{statistic.name}}</div>
-        <div>Transactions</div>
+    <div *ngFor="let statistic of statistics" class="statistics-statistic">
+      <div class="statistics-statistic-header">
+        <b>{{statistic.name}}</b>
+        <small>Transactions</small>
       </div>
-      <div>
-        <div>€{{statistic.value}}</div>
-        <div>{{statistic.transactions}}</div>
+      <div class="statistics-statistic-content">
+        <b>€{{statistic.value}}</b>
+        <div class="statistics-statistic-content-transactions">{{statistic.transactions}}</div>
       </div>
-      <div>
-        <div>Compared to last year</div>
+      <div class="statistics-statistic-footer">
+        <b>Compared to last year</b>
         <div>
-          <div>€{{statistic.lastYearValue}}</div>
-          <div>{{statistic.lastYearTransactions}}</div>
+          <small>€{{statistic.lastYearValue}}</small>
+          <small>{{statistic.lastYearTransactions}}</small>
         </div>
       </div>
     </div>

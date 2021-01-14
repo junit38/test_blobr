@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --blue: rgb(19, 117, 238);
-  --cornerRadius: 7px;
+  --borderRadius: 7px;
+  --borderColor: rgb(235, 235, 235);
 }
 
 body {

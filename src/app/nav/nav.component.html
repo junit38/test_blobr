@@ -7,15 +7,25 @@
     </div>
   </div>
   <div class="nav-content">
-    <div>
-      <
+    <div class="nav-content-item">
+      <div class="arrow" [ngClass]="{
+        bold: selectedMonth != months[0]
+      }">
+        <
+      </div>
     </div>
-    <div *ngFor="let month of months">
-      <div>{{month}}</div>
-      <div>{{year}}</div>
+    <div *ngFor="let month of months" class="nav-content-item" [ngClass]="{
+      selected: month.month == selectedMonth.month && month.year == selectedMonth.year
+    }">
+      <b>{{month.month}}</b>
+      <small>{{month.year}}</small>
     </div>
-    <div>
-      >
+    <div class="nav-content-item">
+      <div class="arrow" [ngClass]="{
+        bold: selectedMonth != months[monthsLength - 1]
+      }">
+        >
+      </div>
     </div>
   </div>
 </div>
