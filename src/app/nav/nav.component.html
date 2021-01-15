@@ -6,24 +6,26 @@
       {{header}}
     </div>
   </div>
-  <div class="nav-content">
+  <div class="nav-content" (wheel)="onWheel($event)">
     <div class="nav-content-item">
       <div class="arrow" [ngClass]="{
-        bold: selectedMonth != months[0]
-      }">
+        bold: selectedMonthIndex != 0,
+        small: selectedMonthIndex == 0
+      }" (click)="firstMonth()">
         <
       </div>
     </div>
-    <div *ngFor="let month of months" class="nav-content-item" [ngClass]="{
-      selected: month.month == selectedMonth.month && month.year == selectedMonth.year
+    <div *ngFor="let month of months; let index = index" class="nav-content-item" [ngClass]="{
+      selected: index == selectedMonthIndex
     }">
       <b>{{month.month}}</b>
       <small>{{month.year}}</small>
     </div>
     <div class="nav-content-item">
       <div class="arrow" [ngClass]="{
-        bold: selectedMonth != months[monthsLength - 1]
-      }">
+        bold: selectedMonthIndex != monthsLength - 1,
+        small: selectedMonthIndex == monthsLength - 1
+      }" (click)="lastMonth()">
         >
       </div>
     </div>

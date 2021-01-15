@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class StatisticsComponent {
 
-  statistics = [
+  private statistics = [
     {
       name: 'Revenue',
       value: 5.00,

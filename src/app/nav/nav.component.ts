@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
 
-  headers = [
+  private headers = [
     'Days',
     'Weeks',
     'Months',
@@ -15,11 +15,9 @@ export class NavComponent {
     'Custom...'
   ];
 
-  selectedHeader = 'Months';
+  private selectedHeader = 'Months';
 
-  year = '2020';
-
-  months = [{
+  private months = [{
       month: 'November',
       year: 2019
     },
@@ -65,11 +63,52 @@ export class NavComponent {
     }
   ];
 
-  monthsLength = this.months.length;
+  private monthsLength = this.months.length;
 
-  selectedMonth = {
-    month: 'September',
-    year: 2020
+  private selectedMonthIndex = this.monthsLength - 1;
+
+  firstMonth() {
+    this.selectedMonthIndex = 0;
+  }
+
+  lastMonth() {
+    this.selectedMonthIndex = this.monthsLength - 1;
+  }
+
+  previousMonth() {
+    if (this.selectedMonthIndex < this.monthsLength - 1)
+      this.selectedMonthIndex++;
+  }
+
+  nextMonth() {
+    if (this.selectedMonthIndex > 0)
+      this.selectedMonthIndex--;
+  }
+
+  // @HostListener("window:scroll", []) onWindowScroll() {
+  //   console.log('scrolling');
+  //   const verticalOffset = window.pageYOffset
+  //       || document.documentElement.scrollTop
+  //       || document.body.scrollTop || 0;
+  // }
+
+  private eventCatch = 0;
+
+  onWheel(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    if (this.eventCatch == 0) {
+      if (event.deltaY < 0) {
+        this.nextMonth();
+      }
+      else if (event.deltaY > 0) {
+        this.previousMonth();
+      }
+    }
+    this.eventCatch++;
+    if (this.eventCatch == 10)
+      this.eventCatch = 0;
+    return false;
   }
 
   constructor() { }

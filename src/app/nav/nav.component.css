@@ -13,6 +13,7 @@
   border: 1px solid var(--borderColor);
   border-right: 0;
   color: rgb(143, 143, 143);
+  cursor: pointer;
 }
 
 .nav .nav-header .nav-header-item:first-child {
@@ -56,10 +57,15 @@
 .nav .nav-content .nav-content-item .arrow {
   position: absolute;
   top: 25%;
+  cursor: pointer;
 }
 
 .nav .nav-content .nav-content-item .arrow.bold {
   font-weight: bold;
+}
+
+.nav .nav-content .nav-content-item .arrow.small {
+  color: gray;
 }
 
 .nav .nav-content .nav-content-item:first-child {

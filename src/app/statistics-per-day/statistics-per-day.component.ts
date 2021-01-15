@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class StatisticsPerDayComponent {
 
-  headers = [
+  private headers = [
     'Revenue',
     'Refunds',
     'Chargebacks'
   ]
 
-  statistics = [
+  private statistics = [
     {
       date: new Date('September 1 2020'),
       statistics: [

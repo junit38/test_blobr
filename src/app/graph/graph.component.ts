@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 })
 export class GraphComponent {
 
-  currentPeriod = {
+  private currentPeriod = {
     month: 'September',
     year: '2020'
   }
 
-  previousPeriod = {
+  private previousPeriod = {
     month: 'September',
     year: '2019'
   }
