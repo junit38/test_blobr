@@ -34,10 +34,17 @@
   list-style: none;
   color: rgb(158, 158, 158);
   padding: 15px 20px;
+  cursor: pointer;
 }
 
 .sidebar .sidebar-content li.selected {
   background-color: var(--blue);
+  color: white;
+}
+
+.sidebar .sidebar-content li:hover {
+  background-color: var(--blue);
+  color: white;
 }
 
 .sidebar .sidebar-content li img {
