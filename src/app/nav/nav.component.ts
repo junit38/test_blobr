@@ -12,6 +12,7 @@ export class NavComponent {
     'Weeks',
     'Months',
     'Quarters',
+    'Years',
     'Custom...'
   ];
 
@@ -106,7 +107,7 @@ export class NavComponent {
       }
     }
     this.eventCatch++;
-    if (this.eventCatch == 10)
+    if (this.eventCatch == 7)
       this.eventCatch = 0;
     return false;
   }
