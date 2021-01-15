@@ -20,8 +20,59 @@
 
 .statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-header .statistics-per-day-statistics-header-item {
   display: table-cell;
+  padding: 15px;
 }
 
-.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-header .statistics-per-day-statistics-header-item div {
-  display: inline-block;
+.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-header .statistics-per-day-statistics-header-item:first-child {
+  width: 23%;
+}
+
+.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-header .statistics-per-day-statistics-header-item .statistics-per-day-statistics-header-item-content {
+  display: table;
+  width: 100%;
+}
+
+.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-header .statistics-per-day-statistics-header-item .statistics-per-day-statistics-header-item-content b {
+  display: table-cell;
+  width: 50%;
+  text-align: right;
+}
+
+.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-header .statistics-per-day-statistics-header-item .statistics-per-day-statistics-header-item-content small {
+  display: table-cell;
+  width: 50%;
+  text-align: center;
+}
+
+.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-content {
+  display: table-row;
+}
+
+.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-content .statistics-per-day-statistics-content-item {
+  display: table-cell;
+  padding: 15px;
+  border-top: 1px solid var(--borderColor);
+}
+
+.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-content .statistics-per-day-statistics-content-item:first-child {
+  color: gray;
+}
+
+.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-content .statistics-per-day-statistics-content-item .statistics-per-day-statistics-content-item-content {
+  display: table;
+  width: 100%;
+}
+
+.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-content .statistics-per-day-statistics-content-item .statistics-per-day-statistics-content-item-content b {
+  display: table-cell;
+  width: 50%;
+  text-align: right;
+}
+
+.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-content .statistics-per-day-statistics-content-item .statistics-per-day-statistics-content-item-content small {
+  display: table-cell;
+  width: 50%;
+  text-align: center;
+  opacity: 0.6;
+  color: gray;
 }
