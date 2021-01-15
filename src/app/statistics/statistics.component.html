@@ -7,14 +7,14 @@
         <small>Transactions</small>
       </div>
       <div class="statistics-statistic-content">
-        <b>€{{statistic.value}}</b>
+        <b>€{{statistic.value | number:'1.2'}}</b>
         <div class="statistics-statistic-content-transactions">{{statistic.transactions}}</div>
       </div>
       <div class="statistics-statistic-footer">
         <b>Compared to last year</b>
-        <div>
-          <small>€{{statistic.lastYearValue}}</small>
-          <small>{{statistic.lastYearTransactions}}</small>
+        <div class="statistics-statistic-footer-content">
+          <small>€{{statistic.lastYearValue | number:'1.2'}}</small>
+          <small class="statistics-statistic-footer-transactions">{{statistic.lastYearTransactions}}</small>
         </div>
       </div>
     </div>

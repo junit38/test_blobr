@@ -1,0 +1,27 @@
+.statistics-per-day {
+  padding: 0px 40px 40px 40px;
+}
+
+.statistics-per-day h2 {
+  margin-top: 0;
+}
+
+.statistics-per-day .statistics-per-day-statistics {
+  background-color: white;
+  border: 1px solid var(--borderColor);
+  border-radius: var(--borderRadius);
+  display: table;
+  width: 100%;
+}
+
+.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-header {
+  display: table-row;
+}
+
+.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-header .statistics-per-day-statistics-header-item {
+  display: table-cell;
+}
+
+.statistics-per-day .statistics-per-day-statistics .statistics-per-day-statistics-header .statistics-per-day-statistics-header-item div {
+  display: inline-block;
+}

@@ -1,10 +1,12 @@
 <div class="statistics-per-day">
   <h3>Per Day</h3>
-  <div>
-    <div>Date</div>
-    <div *ngFor="let header of headers">
-      <div>{{header}}</div>
-      <div>Transactions</div>
+  <div class="statistics-per-day-statistics">
+    <div class="statistics-per-day-statistics-header">
+      <div class="statistics-per-day-statistics-header-item">Date</div>
+      <div *ngFor="let header of headers" class="statistics-per-day-statistics-header-item">
+        <div>{{header}}</div>
+        <div>Transactions</div>
+      </div>
     </div>
     <div *ngFor="let statistic of statistics">
       <div>{{statistic.date}}</div>
