@@ -1,6 +1,23 @@
 .sidebar .sidebar-header {
   background-color: black;
   padding: 20px;
+  cursor: pointer;
+}
+
+.sidebar .sidebar-header:hover {
+  background-color: rgb(51, 51, 51);
+}
+
+.sidebar .sidebar-header.open {
+  background-color: rgb(51, 51, 51);
+}
+
+.sidebar .sidebar-header.open img {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .sidebar .sidebar-header h3 {
@@ -52,5 +69,53 @@
 }
 
 .sidebar .sidebar-content li div {
+  padding-left: 40px;
+}
+
+.sidebar .sidebar-popup {
+  background-color: white;
+  border-radius: 15px;
+  width: 18%;
+  position: absolute;
+  top: 80px;
+  left: 1%;
+  visibility: hidden;
+}
+
+.sidebar .sidebar-popup.open {
+  visibility: visible;
+}
+
+.sidebar .sidebar-popup ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.sidebar .sidebar-popup li {
+  list-style: none;
+  cursor: pointer;
+  padding: 15px 20px;
+}
+
+.sidebar .sidebar-popup li:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.sidebar .sidebar-popup li:last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.sidebar .sidebar-popup li:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+.sidebar .sidebar-popup li img {
+  float: left;
+}
+
+.sidebar .sidebar-popup li div {
   padding-left: 40px;
 }

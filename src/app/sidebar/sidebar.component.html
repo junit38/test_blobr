@@ -1,13 +1,13 @@
 <div class="sidebar">
-  <a href="#popup">
-    <div class="sidebar-header">
-      <h3>Pearson Specter Litt</h3>
-      <h4>
-        Mike Ross
-        <img src="/assets/icons/angle-down.svg" alt="" width="8" height="8" title="transactions">
-      </h4>
-    </div>
-  </a>
+  <div class="sidebar-header" (click)="togglePopup()" [ngClass]="{
+      open: popupOpen
+    }">
+    <h3>Pearson Specter Litt</h3>
+    <h4>
+      Mike Ross
+      <img src="/assets/icons/angle-down.svg" alt="" width="8" height="8" title="transactions">
+    </h4>
+  </div>
   <div class="sidebar-content">
     <ul>
       <li>
@@ -29,6 +29,24 @@
       <li>
         <img src="/assets/icons/help.svg" alt="" width="20" height="20" title="help center">
         <div>Help Center</div>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-popup" id="sidebar-popup" [ngClass]="{
+      open: popupOpen
+    }">
+    <ul>
+      <li>
+        <img src="/assets/icons/user.svg" alt="" width="20" height="20" title="house">
+        <div>Account Settings</div>
+      </li>
+        <li>
+          <img src="/assets/icons/plus.svg" alt="" width="20" height="20" title="transactions">
+          <div>New organisations</div>
+        </li>
+      <li>
+        <img src="/assets/icons/logout.svg" alt="" width="20" height="20" title="statistics">
+        <div>Logout</div>
       </li>
     </ul>
   </div>
