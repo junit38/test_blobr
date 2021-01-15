@@ -8,16 +8,27 @@
 .graph .graph-header-content {
   display: inline-block;
   margin-right: 20px;
+  position: relative;
 }
 
 .graph .graph-header-content:not(.selected) {
   opacity: 0.7;
 }
 
+.graph .graph-header-content .graph-header-content-circle {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+}
 
 .graph .graph-header-content .graph-header-content-title {
   color: var(--blue);
   display: inline-block;
+  margin-left: 25px;
 }
 
 .graph .graph-header-content .graph-header-content-small {
