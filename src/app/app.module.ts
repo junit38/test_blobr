@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { ContentComponent } from './content/content.component';
 import { NavComponent } from './nav/nav.component';
 import { GraphComponent } from './graph/graph.component';
 import { StatisticsComponent } from './statistics/statistics.component';
@@ -14,6 +15,7 @@ import { StatisticsPerDayComponent } from './statistics-per-day/statistics-per-d
   declarations: [
     AppComponent,
     SidebarComponent,
+    ContentComponent,
     NavComponent,
     GraphComponent,
     StatisticsComponent,

@@ -10,3 +10,54 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
+
+.canvasjs-chart-tooltip {
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.canvasjs-chart-tooltip div:first-child{
+  text-shadow: none !important;
+  font-size: initial;
+}
+
+.graph-tooltip {
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid var(--borderColor);
+}
+
+.graph-tooltip .graph-tooltip-header {
+  padding: 15px;
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.graph-tooltip .graph-tooltip-header h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.graph-tooltip .graph-tooltip-header small {
+  color: gray;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.graph-tooltip .graph-tooltip-content {
+  padding: 15px;
+}
+
+.graph-tooltip .graph-tooltip-content .graph-tooltip-content-header div:first-child {
+  display: inline-block;
+}
+
+.graph-tooltip .graph-tooltip-content .graph-tooltip-content-header div:last-child {
+  float: right;
+}
+
+.graph-tooltip .graph-tooltip-content .graph-tooltip-content-footer {
+  text-align: right;
+  color: gray;
+  opacity: 0.6;
+  margin-top: 5px;
+}

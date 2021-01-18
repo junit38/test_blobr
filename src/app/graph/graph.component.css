@@ -9,6 +9,7 @@
   display: inline-block;
   margin-right: 20px;
   position: relative;
+  cursor: pointer;
 }
 
 .graph .graph-header-content:not(.selected) {
@@ -33,4 +34,9 @@
 
 .graph .graph-header-content .graph-header-content-small {
   display: inline-block;
+}
+
+.graph .graph-content {
+  margin-top: 40px;
+  margin-left: 50px;
 }
