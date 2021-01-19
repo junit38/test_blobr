@@ -47,6 +47,48 @@ export class GraphComponent implements OnInit {
 
     const dataPointsPreviousPeriod = [
       {
+        x: new Date('August 31 2020'),
+        y: 0,
+        labelY: '',
+        labelX: '',
+        labelXPreviousPeriod: '',
+        markerColor: 'transparent',
+        markerBorderColor: 'transparent',
+        lineColor: '#1375EE',
+        lineDashType: 'solid'
+      },
+      {
+        x: new Date('September 1 2020'),
+        y: 0,
+        labelY: '',
+        labelX: '',
+        labelXPreviousPeriod: '',
+        markerColor: 'transparent',
+        markerBorderColor: 'transparent',
+        lineColor: '#1375EE',
+        lineDashType: 'solid'
+      },
+      {
+        x: new Date('September 2 2020'),
+        y: 0,
+        labelY: '',
+        labelX: '',
+        labelXPreviousPeriod: '',
+        markerColor: 'transparent',
+        markerBorderColor: 'transparent',
+        lineColor: '#1375EE',
+        lineDashType: 'solid'
+      },
+      {
+        x: new Date('September 3 2020'),
+        y: 0,
+        labelY: '',
+        labelX: '',
+        labelXPreviousPeriod: '',
+        markerColor: 'transparent',
+        markerBorderColor: 'transparent'
+      },
+      {
         x: new Date('September 4 2020'),
         y: 0,
         labelY: '',
@@ -263,6 +305,7 @@ export class GraphComponent implements OnInit {
       exportEnabled: false,
       dataPointWidth: 20,
       axisX: {
+        minimum: new Date('August 31 2020 12:00'),
         tickThickness: 0,
         lineThickness: 0,
         labelWrap: true,

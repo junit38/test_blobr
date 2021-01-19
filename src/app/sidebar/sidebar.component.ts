@@ -1,12 +1,13 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css']
 })
-export class SidebarComponent {
+export class SidebarComponent implements OnInit {
   private popupOpen = false;
+  private popupWidth = null;
   private wasInside = false;
 
   @HostListener('click')
@@ -23,6 +24,10 @@ export class SidebarComponent {
   }
 
   constructor() { }
+
+  ngOnInit() {
+    this.popupWidth = document.getElementById('sidebar').offsetWidth - 30 + 'px';
+  }
 
   togglePopup() {
     this.popupOpen = !this.popupOpen;

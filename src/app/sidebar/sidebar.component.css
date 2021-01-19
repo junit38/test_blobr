@@ -22,6 +22,7 @@
 
 .sidebar .sidebar-header h3 {
   margin: 0;
+  font-size: 1.3em;
   color: white;
 }
 
@@ -74,11 +75,10 @@
 
 .sidebar .sidebar-popup {
   background-color: white;
-  border-radius: 15px;
-  width: 18%;
+  border-radius: 10px;
   position: absolute;
   top: 80px;
-  left: 1%;
+  left: 15px;
   visibility: hidden;
 }
 
@@ -94,17 +94,19 @@
 .sidebar .sidebar-popup li {
   list-style: none;
   cursor: pointer;
-  padding: 15px 20px;
+  padding: 10px 15px;
 }
 
 .sidebar .sidebar-popup li:first-child {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 15px 15px 10px 15px;
 }
 
 .sidebar .sidebar-popup li:last-child {
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px 15px 15px 15px;
 }
 
 .sidebar .sidebar-popup li:hover {

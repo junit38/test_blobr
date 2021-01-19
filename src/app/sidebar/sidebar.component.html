@@ -1,4 +1,4 @@
-<div class="sidebar">
+<div class="sidebar" id="sidebar">
   <div class="sidebar-header" (click)="togglePopup()" [ngClass]="{
       open: popupOpen
     }">
@@ -34,7 +34,9 @@
   </div>
   <div class="sidebar-popup" id="sidebar-popup" [ngClass]="{
       open: popupOpen
-    }">
+    }" [ngStyle]="{
+    width: popupWidth
+  }">
     <ul>
       <li>
         <img src="/assets/icons/user.svg" alt="" width="20" height="20" title="house">
