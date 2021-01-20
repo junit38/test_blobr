@@ -371,5 +371,11 @@ export class GraphComponent implements OnInit {
     });
 
     chart.render();
+
+    let div = document.getElementsByClassName('canvasjs-chart-tooltip')[0].firstChild as HTMLElement;
+    div.style.padding = '0';
+    div.style.textShadow = 'none';
+    div.style.fontSize = 'initial !important';
+    div.style.borderRadius = '10px';
   }
 }
